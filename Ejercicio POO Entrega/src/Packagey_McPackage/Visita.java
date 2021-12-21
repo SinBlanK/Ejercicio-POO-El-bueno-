@@ -20,7 +20,7 @@ public Visita( Cliente objeto,Date fecha) {
 	
 public void setImporte(int importe , Visita objeto) {
 	if(prueba.getSocio()==true) {
-	int importefinal = (importe*Cliente.getDescuento(this.prueba)/100);
+	int importefinal = (importe-(importe*Cliente.getDescuento(this.prueba)/100));
 	objeto.factura= importefinal;
 	}else
 	objeto.factura= 0;
